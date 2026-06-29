@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './Components/Layout/layout';
 import Home from './Pages/Home/Home';
+import Services from './Pages/Services/Services';
 
 // Quick template placeholders for other routes
 const ServicesPage = () => (
@@ -33,7 +34,7 @@ function App() {
           <Route path="/" element={<Home />} />
           
           {/* Secondary Pages Routes */}
-          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           
           {/* Fallback route for typing errors */}

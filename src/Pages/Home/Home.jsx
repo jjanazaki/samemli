@@ -184,7 +184,11 @@ const Home = () => {
 
         <div className="section-title">
 
-          <h2>لماذا اختر SAMEMLY؟</h2>
+          <h2>
+            لماذا اختر
+            <img src={textLogo} alt="SAMEMLY" className="section-title-logo" />
+            ؟
+          </h2>
 
           <p>
             نجعل بناء موقعك أمرًا بسيطًا وشفافًا وخاليًا من التوتر.

@@ -1,0 +1,1210 @@
+/* ==========================================
+   SERVICES PAGE
+========================================== */
+
+.services-page{
+    background:#090215;
+    color:#fff;
+    overflow-x:hidden;
+    direction: rtl;
+    text-align: right;
+}
+
+.services-page section{
+    padding:120px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.services-page .section-title,
+.services-page .hero-left,
+.services-page .hero-right,
+.services-page .timeline-item,
+.services-page .faq-item,
+.services-page .service-card,
+.services-page .why-card,
+.services-page .comparison-table{
+    direction: rtl;
+    text-align: right;
+}
+
+.section-title h2{
+    font-size:48px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.section-title p{
+    color:#aeb3d3;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    font-size:17px;
+}
+
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.services-hero{
+
+    min-height:90vh;
+
+    display:grid;
+
+    grid-template-columns:55% 45%;
+
+    align-items:center;
+
+    gap:70px;
+
+    padding-top:140px;
+
+}
+
+.hero-left{
+
+    max-width:700px;
+
+}
+
+.services-page .hero-buttons,
+.services-page .service-features,
+.services-page .feature,
+.services-page .faq-item h3{
+    direction: rtl;
+    text-align: right;
+}
+
+.hero-badge{
+
+    display:inline-block;
+
+    padding:10px 20px;
+
+    border-radius:40px;
+
+    background:rgba(60,231,255,.12);
+
+    color:#3ce7ff;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    font-weight:600;
+
+    margin-bottom:28px;
+
+}
+
+.hero-left h1{
+
+    font-size:72px;
+
+    line-height:1.1;
+
+    font-weight:800;
+
+    margin-bottom:28px;
+
+}
+
+.hero-left h1 span{
+
+    background:linear-gradient(90deg,#3ce7ff,#8b54ff);
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+}
+
+.hero-left p{
+
+    font-size:19px;
+
+    line-height:2;
+
+    color:#b8bdd7;
+
+    margin-bottom:45px;
+
+}
+
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.primary-btn{
+
+    padding:18px 36px;
+
+    border:none;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    background:linear-gradient(90deg,#3ce7ff,#8754ff);
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:0 0 25px rgba(60,231,255,.25);
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 35px rgba(60,231,255,.35);
+
+}
+
+.secondary-btn{
+
+    padding:18px 36px;
+
+    border-radius:50px;
+
+    border:2px solid #3ce7ff;
+
+    background:transparent;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.secondary-btn:hover{
+
+    background:#3ce7ff;
+
+    color:#090215;
+
+}
+
+
+
+/* ==========================================
+   HERO IMAGE
+========================================== */
+
+.hero-right{
+
+    display:flex;
+
+    justify-content:center;
+
+    position:relative;
+
+}
+
+.hero-right::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:520px;
+
+    height:520px;
+
+    border-radius:50%;
+
+    background:#3ce7ff18;
+
+    filter:blur(90px);
+
+}
+
+.hero-image{
+
+    width:100%;
+
+    max-width:650px;
+
+    position:relative;
+
+    z-index:2;
+
+    animation:floatImage 6s ease-in-out infinite;
+
+}
+
+
+
+/* ==========================================
+   SERVICES GRID
+========================================== */
+
+.services-grid-section{
+
+    padding-top:80px;
+
+}
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+/* ==========================================
+   SERVICE CARD
+========================================== */
+
+.service-card{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:26px;
+
+    padding:35px;
+
+    transition:.35s;
+
+    backdrop-filter:blur(18px);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#3ce7ff;
+
+    box-shadow:0 0 40px rgba(60,231,255,.15);
+
+}
+
+.service-icon{
+
+    width:75px;
+
+    height:75px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:32px;
+
+    border-radius:18px;
+
+    background:linear-gradient(135deg,#3ce7ff,#8a55ff);
+
+    margin-bottom:28px;
+
+}
+
+.service-card h3{
+
+    font-size:28px;
+
+    margin-bottom:18px;
+
+}
+
+.service-card p{
+
+    color:#b8bdd7;
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+
+}
+
+.divider{
+
+    width:100%;
+
+    height:1px;
+
+    background:rgba(255,255,255,.08);
+
+    margin:25px 0;
+
+}
+
+
+
+/* ==========================================
+   FEATURES
+========================================== */
+
+.service-features{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+.feature{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#d8dcf0;
+
+}
+
+.feature svg{
+
+    color:#3ce7ff;
+
+}
+
+
+
+/* ==========================================
+   CARD FOOTER
+========================================== */
+
+.service-footer{
+
+    margin-top:30px;
+
+}
+
+.service-footer h4{
+
+    color:#3ce7ff;
+
+    font-size:22px;
+
+    margin-bottom:22px;
+
+}
+
+.service-footer button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    background:#17132d;
+
+    color:white;
+
+    transition:.35s;
+
+}
+
+.service-footer button:hover{
+
+    background:linear-gradient(90deg,#3ce7ff,#8754ff);
+
+}
+
+
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+@keyframes floatImage{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-18px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+/* ==========================================
+   COMPARISON SECTION
+========================================== */
+
+.comparison-section{
+
+    padding:130px 8%;
+
+}
+
+.comparison-table{
+
+    margin-top:60px;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.03);
+
+    backdrop-filter:blur(15px);
+
+}
+
+.table-header{
+
+    display:grid;
+
+    grid-template-columns:2fr 2fr 1.5fr 1.5fr;
+
+    background:linear-gradient(90deg,#3ce7ff,#8754ff);
+
+    color:white;
+
+    font-weight:700;
+
+    padding:22px 30px;
+
+    text-align:center;
+
+}
+
+.table-row{
+
+    display:grid;
+
+    grid-template-columns:2fr 2fr 1.5fr 1.5fr;
+
+    align-items:center;
+
+    padding:22px 30px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+    text-align:center;
+
+}
+
+.table-row:hover{
+
+    background:rgba(60,231,255,.08);
+
+}
+
+.table-row div{
+
+    color:#d6d8ea;
+
+    font-size:15px;
+
+}
+
+
+
+/* ==========================================
+   WHY WORK WITH US
+========================================== */
+
+.why-us{
+
+    padding:140px 8%;
+
+}
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.why-card{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    backdrop-filter:blur(18px);
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#3ce7ff;
+
+    box-shadow:0 0 35px rgba(60,231,255,.15);
+
+}
+
+.why-icon{
+
+    width:75px;
+
+    height:75px;
+
+    margin:0 auto 25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:34px;
+
+    border-radius:20px;
+
+    background:linear-gradient(135deg,#3ce7ff,#8754ff);
+
+}
+
+.why-card h3{
+
+    font-size:24px;
+
+    margin-bottom:18px;
+
+}
+
+.why-card p{
+
+    color:#b8bdd7;
+
+    line-height:1.9;
+
+    font-size:15px;
+
+}
+
+
+
+/* ==========================================
+   SMALL ANIMATIONS
+========================================== */
+
+.why-card,
+.service-card,
+.table-row{
+
+    transition:all .35s ease;
+
+}
+
+.service-card:hover .service-icon{
+
+    transform:rotate(-8deg) scale(1.08);
+
+}
+
+.service-card:hover h3{
+
+    color:#3ce7ff;
+
+}
+
+.why-card:hover .why-icon{
+
+    transform:scale(1.1) rotate(8deg);
+
+}
+
+.service-footer button:hover{
+
+    letter-spacing:.5px;
+
+}
+
+/* ==========================================
+   HOW IT WORKS
+========================================== */
+
+.how-it-works{
+
+    padding:140px 8%;
+
+}
+
+.timeline{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:80px auto 0;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:32px;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:linear-gradient(
+        to bottom,
+        #3ce7ff,
+        #8754ff
+    );
+
+    border-radius:20px;
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    padding-left:110px;
+
+    margin-bottom:65px;
+
+}
+
+.timeline-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+.timeline-number{
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #3ce7ff,
+        #8754ff
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:white;
+
+    box-shadow:0 0 25px rgba(60,231,255,.25);
+
+}
+
+.timeline-item h3{
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+}
+
+.timeline-item p{
+
+    color:#b8bdd7;
+
+    line-height:1.9;
+
+    max-width:600px;
+
+}
+
+
+
+/* ==========================================
+   FAQ
+========================================== */
+
+.faq{
+
+    padding:140px 8%;
+
+}
+
+.faq-container{
+
+    max-width:900px;
+
+    margin:60px auto 0;
+
+}
+
+.faq-item{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:28px 35px;
+
+    margin-bottom:20px;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.faq-item:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#3ce7ff;
+
+    box-shadow:0 0 30px rgba(60,231,255,.12);
+
+}
+
+.faq-item h3{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    font-size:22px;
+
+    margin-bottom:18px;
+
+}
+
+.faq-item h3::after{
+
+    content:"+";
+
+    color:#3ce7ff;
+
+    font-size:30px;
+
+    transition:.35s;
+
+}
+
+.faq-item:hover h3::after{
+
+    transform:rotate(45deg);
+
+}
+
+.faq-item p{
+
+    color:#b8bdd7;
+
+    line-height:1.9;
+
+    font-size:15px;
+
+}
+
+
+
+/* ==========================================
+   TIMELINE ANIMATION
+========================================== */
+
+.timeline-item{
+
+    transition:.35s;
+
+}
+
+.timeline-item:hover{
+
+    transform:translateX(12px);
+
+}
+
+.timeline-item:hover .timeline-number{
+
+    transform:scale(1.1);
+
+    box-shadow:0 0 40px rgba(60,231,255,.4);
+
+}
+
+
+
+/* ==========================================
+   FAQ ANIMATION
+========================================== */
+
+.faq-item{
+
+    overflow:hidden;
+
+}
+
+.faq-item p{
+
+    transition:.35s;
+
+}
+
+.faq-item:hover p{
+
+    color:#ffffff;
+
+}
+
+/* ==========================================
+   HOW IT WORKS
+========================================== */
+
+.how-it-works{
+
+    padding:140px 8%;
+
+}
+
+.timeline{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:80px auto 0;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:32px;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:linear-gradient(
+        to bottom,
+        #3ce7ff,
+        #8754ff
+    );
+
+    border-radius:20px;
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    padding-left:110px;
+
+    margin-bottom:65px;
+
+}
+
+.timeline-item:last-child{
+
+    margin-bottom:0;
+
+}
+
+.timeline-number{
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #3ce7ff,
+        #8754ff
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:white;
+
+    box-shadow:0 0 25px rgba(60,231,255,.25);
+
+}
+
+.timeline-item h3{
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+}
+
+.timeline-item p{
+
+    color:#b8bdd7;
+
+    line-height:1.9;
+
+    max-width:600px;
+
+}
+
+
+
+/* ==========================================
+   FAQ
+========================================== */
+
+.faq{
+
+    padding:140px 8%;
+
+}
+
+.faq-container{
+
+    max-width:900px;
+
+    margin:60px auto 0;
+
+}
+
+.faq-item{
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:28px 35px;
+
+    margin-bottom:20px;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.faq-item:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#3ce7ff;
+
+    box-shadow:0 0 30px rgba(60,231,255,.12);
+
+}
+
+.faq-item h3{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    font-size:22px;
+
+    margin-bottom:18px;
+
+}
+
+.faq-item h3::after{
+
+    content:"+";
+
+    color:#3ce7ff;
+
+    font-size:30px;
+
+    transition:.35s;
+
+}
+
+.faq-item:hover h3::after{
+
+    transform:rotate(45deg);
+
+}
+
+.faq-item p{
+
+    color:#b8bdd7;
+
+    line-height:1.9;
+
+    font-size:15px;
+
+}
+
+
+
+/* ==========================================
+   TIMELINE ANIMATION
+========================================== */
+
+.timeline-item{
+
+    transition:.35s;
+
+}
+
+.timeline-item:hover{
+
+    transform:translateX(12px);
+
+}
+
+.timeline-item:hover .timeline-number{
+
+    transform:scale(1.1);
+
+    box-shadow:0 0 40px rgba(60,231,255,.4);
+
+}
+
+
+
+/* ==========================================
+   FAQ ANIMATION
+========================================== */
+
+.faq-item{
+
+    overflow:hidden;
+
+}
+
+.faq-item p{
+
+    transition:.35s;
+
+}
+
+.faq-item:hover p{
+
+    color:#ffffff;
+
+}
+
+.hero {
+    background: #090215;
+}
+
+.services-grid-section {
+    background: #0d0720;
+}
+
+.comparison-section {
+    background: #090215;
+}
+
+.why-us {
+    background: #0d0720;
+}
