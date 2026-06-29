@@ -18,39 +18,35 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={scrolled ? "navbar navbar-scroll" : "navbar"}>
+    <nav className={scrolled ? "navbar navbar-scroll" : "navbar"} dir="rtl">
 
       <div className="logo">
         <Link to="/">
           <img
             src={logo}
-            alt="SAMEMLY"
+            alt="ساميملي"
           />
         </Link>
       </div>
 
       <div className={menuOpen ? "nav-links active" : "nav-links"}>
 
-        <Link to="/">Home</Link>
-
-        <Link to="/services">Services</Link>
-
-        <Link to="/portfolio">Portfolio</Link>
-
-        <Link to="/about">About Us</Link>
-
-        <Link to="/contact">Contact</Link>
+        <Link to="/">الرئيسية</Link>
+        <Link to="/services">الخدمات</Link>
+        <Link to="/portfolio">أعمالنا</Link>
+        <Link to="/about">من نحن</Link>
+        <Link to="/contact">اتصل بنا</Link>
 
       </div>
 
       <div className="nav-buttons">
 
         <Link className="login-btn" to="/login">
-          Log In
+          تسجيل الدخول
         </Link>
 
         <Link className="start-btn" to="/signup">
-          Get Started
+          ابدأ الآن
         </Link>
 
       </div>
@@ -59,11 +55,9 @@ const Navbar = () => {
         className={menuOpen ? "hamburger active" : "hamburger"}
         onClick={() => setMenuOpen(!menuOpen)}
       >
-
         <span></span>
         <span></span>
         <span></span>
-
       </div>
 
     </nav>

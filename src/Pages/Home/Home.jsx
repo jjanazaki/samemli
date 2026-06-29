@@ -7,10 +7,18 @@ import service1 from "../../assets/web-design.png";
 import service2 from "../../assets/development.png";
 import service3 from "../../assets/bug-fix.png";
 import service4 from "../../assets/maintenance.png";
+import fullLogo from "../../assets/logo-big.png";
 
 const Home = () => {
   return (
     <main className="home">
+      {/* TOP IMAGE */}
+      <section className="top-image">
+        <img
+          src={fullLogo}
+          alt="صورة توضيحية أعلى الصفحة"
+        />
+      </section>
 
       {/* ================= HERO ================= */}
 
@@ -19,35 +27,35 @@ const Home = () => {
         <div className="hero-left">
 
           <h1>
-            Build a Website That
-            <span> Grows Your Business</span>
+            ابنِ موقعًا إلكترونيًا
+            <span> ينمّي عملك</span>
           </h1>
 
           <p>
-            Whether you need a brand-new website, updates to an existing one,
-            or ongoing maintenance, our team connects you with experienced
-            developers ready to bring your vision to life.
+            سواء كنت تحتاج إلى موقع جديد بالكامل، أو تحديث لموقعك الحالي،
+            أو صيانة مستمرة، فريقنا يربطك بمطوّرين خبراء جاهزين لتحويل
+            رؤيتك إلى واقع.
           </p>
 
           <div className="hero-buttons">
 
             <button className="primary-btn">
-              Start Your Project
+              ابدأ مشروعك
             </button>
 
             <button className="secondary-btn">
-              Browse Services
+              تصفّح الخدمات
             </button>
 
           </div>
 
           <div className="hero-features">
 
-            <div>⚡ Fast Delivery</div>
+            <div>⚡ تسليم سريع</div>
 
-            <div>🛡 Secure Payments</div>
+            <div>🛡 مدفوعات آمنة</div>
 
-            <div>💻 Professional Developers</div>
+            <div>💻 مطوّرون محترفون</div>
 
           </div>
 
@@ -56,14 +64,8 @@ const Home = () => {
         <div className="hero-right">
 
           <img
-            src={heroLogo}
-            alt="SAMEMLY Logo"
-            className="floating-logo"
-          />
-
-          <img
             src={heroImage}
-            alt="Website Illustration"
+            alt="رسم توضيحي للموقع الإلكتروني"
             className="hero-image"
           />
 
@@ -75,19 +77,17 @@ const Home = () => {
 
       <section className="trusted">
 
-        <h3>Trusted by Startups, Creators & Small Businesses</h3>
+        <h3>
+          موثوق من قِبل الشركات الناشئة وصنّاع المحتوى والشركات الصغيرة
+        </h3>
 
         <div className="trusted-logos">
 
-          <span>LOGO</span>
-
-          <span>LOGO</span>
-
-          <span>LOGO</span>
-
-          <span>LOGO</span>
-
-          <span>LOGO</span>
+          <span>الشعار</span>
+          <span>الشعار</span>
+          <span>الشعار</span>
+          <span>الشعار</span>
+          <span>الشعار</span>
 
         </div>
 
@@ -99,10 +99,10 @@ const Home = () => {
 
         <div className="section-title">
 
-          <h2>Our Services</h2>
+          <h2>خدماتنا</h2>
 
           <p>
-            Everything you need to launch, improve, or maintain your website.
+            كل ما تحتاجه لإطلاق موقعك، وتحسينه، أو الحفاظ عليه.
           </p>
 
         </div>
@@ -113,15 +113,15 @@ const Home = () => {
 
             <img src={service1} alt="" />
 
-            <h3>Website Design</h3>
+            <h3>تصميم المواقع</h3>
 
             <p>
-              Beautiful, responsive websites designed around your brand.
+              مواقع جميلة ومتجاوبة مع كل الأجهزة، مصممة وفقًا لهويتك.
             </p>
 
-            <span>Starting From $99</span>
+            <span>بدءًا من 99$</span>
 
-            <button>Learn More</button>
+            <button>اعرف المزيد</button>
 
           </div>
 
@@ -129,15 +129,15 @@ const Home = () => {
 
             <img src={service2} alt="" />
 
-            <h3>Website Development</h3>
+            <h3>تطوير المواقع</h3>
 
             <p>
-              Custom-built websites using modern development technologies.
+              مواقع مخصّصة بالكامل باستخدام تقنيات تطوير حديثة.
             </p>
 
-            <span>Starting From $149</span>
+            <span>بدءًا من 149$</span>
 
-            <button>Learn More</button>
+            <button>اعرف المزيد</button>
 
           </div>
 
@@ -145,15 +145,15 @@ const Home = () => {
 
             <img src={service3} alt="" />
 
-            <h3>Bug Fixes</h3>
+            <h3>حل مشاكل الموقع</h3>
 
             <p>
-              Fix broken layouts, slow loading pages and coding issues.
+              إصلاح الأخطاء في التصميم، وتحسين سرعة التحميل، ومعالجة مشكلات الكود.
             </p>
 
-            <span>Starting From $29</span>
+            <span>بدءًا من 29$</span>
 
-            <button>Learn More</button>
+            <button>اعرف المزيد</button>
 
           </div>
 
@@ -161,15 +161,15 @@ const Home = () => {
 
             <img src={service4} alt="" />
 
-            <h3>Maintenance</h3>
+            <h3>الصيانة</h3>
 
             <p>
-              Monthly updates, backups, security checks and support.
+              تحديثات شهرية، نسخ احتياطي، فحوصات أمنية ودعم مستمر.
             </p>
 
-            <span>Starting From $19/mo</span>
+            <span>بدءًا من 19$/شهريًا</span>
 
-            <button>Learn More</button>
+            <button>اعرف المزيد</button>
 
           </div>
 
@@ -183,10 +183,10 @@ const Home = () => {
 
         <div className="section-title">
 
-          <h2>Why Choose SAMEMLY?</h2>
+          <h2>لماذا اختر SAMEMLY؟</h2>
 
           <p>
-            We make building a website simple, transparent and stress-free.
+            نجعل بناء موقعك أمرًا بسيطًا وشفافًا وخاليًا من التوتر.
           </p>
 
         </div>
@@ -195,41 +195,40 @@ const Home = () => {
 
           <div className="why-card">
 
-            <h3>⚡ Fast Delivery</h3>
+            <h3>⚡ تسليم سريع</h3>
 
             <p>
-              We respect deadlines and keep your project moving without delays.
+              نلتزم بالمواعيد ونبقي مشروعك يتحرك دون تأخير.
             </p>
 
           </div>
 
           <div className="why-card">
 
-            <h3>🛡 Secure Payments</h3>
+            <h3>🛡 مدفوعات آمنة</h3>
 
             <p>
-              Start with a deposit and pay the rest after reviewing the work.
+              ابدأ بدفعة مقدمة ثم ادفع الباقي بعد مراجعة العمل.
             </p>
 
           </div>
 
           <div className="why-card">
 
-            <h3>💻 Skilled Developers</h3>
+            <h3>💻 مطورون مهرة</h3>
 
             <p>
-              Experienced web developers using modern technologies and best
-              practices.
+              مطورون ذوو خبرة يستخدمون تقنيات حديثة وأفضل الممارسات.
             </p>
 
           </div>
 
           <div className="why-card">
 
-            <h3>💬 Clear Communication</h3>
+            <h3>💬 تواصل واضح</h3>
 
             <p>
-              Receive regular updates and stay informed during every stage.
+              احصل على تحديثات منتظمة وكن على اطلاع خلال كل مرحلة.
             </p>
 
           </div>
@@ -237,16 +236,17 @@ const Home = () => {
         </div>
 
       </section>
-            {/* ================= HOW IT WORKS ================= */}
+
+      {/* ================= HOW IT WORKS ================= */}
 
       <section className="how-it-works">
 
         <div className="section-title">
 
-          <h2>How It Works</h2>
+          <h2>كيف يعمل ذلك؟</h2>
 
           <p>
-            Getting your website built has never been easier.
+            لم يكن بناء موقعك أسهل من أي وقت مضى.
           </p>
 
         </div>
@@ -255,51 +255,49 @@ const Home = () => {
 
           <div className="step-card">
             <div className="step-number">1</div>
-            <h3>Choose a Service</h3>
+            <h3>اختر خدمة</h3>
             <p>
-              Browse our website services and select the one that fits your
-              project.
+              تصفح خدماتنا واختر الخدمة الأنسب لمشروعك.
             </p>
           </div>
 
           <div className="step-card">
             <div className="step-number">2</div>
-            <h3>Send Requirements</h3>
+            <h3>أرسل المتطلبات</h3>
             <p>
-              Tell us about your business, goals and upload any files you have.
+              أخبرنا عن نشاطك وأهدافك وارفع أي ملفات لديك.
             </p>
           </div>
 
           <div className="step-card">
             <div className="step-number">3</div>
-            <h3>Pay the Deposit</h3>
+            <h3>ادفع الدفعة المقدمة</h3>
             <p>
-              Secure your order and let our developers begin working.
+              ثبّت طلبك ودع مطورينا يبدأون العمل.
             </p>
           </div>
 
           <div className="step-card">
             <div className="step-number">4</div>
-            <h3>Development</h3>
+            <h3>التطوير</h3>
             <p>
-              Your website is designed, coded and tested with regular progress
-              updates.
+              يتم تصميم موقعك وترميزه واختباره مع تحديثات تقدم منتظمة.
             </p>
           </div>
 
           <div className="step-card">
             <div className="step-number">5</div>
-            <h3>Review & Revisions</h3>
+            <h3>المراجعة والتعديلات</h3>
             <p>
-              Review the project and request revisions until you're satisfied.
+              راجع المشروع واطلب التعديلات حتى تصبح راضيًا تمامًا.
             </p>
           </div>
 
           <div className="step-card">
             <div className="step-number">6</div>
-            <h3>Launch</h3>
+            <h3>الإطلاق</h3>
             <p>
-              Receive your completed website along with all necessary files.
+              ستحصل على موقعك المكتمل مع جميع الملفات اللازمة.
             </p>
           </div>
 
@@ -313,10 +311,10 @@ const Home = () => {
 
         <div className="section-title">
 
-          <h2>Recent Projects</h2>
+          <h2>مشاريعنا الأخيرة</h2>
 
           <p>
-            A glimpse of websites we've helped create and improve.
+            لمحة عن مواقع ساعدناك في إنشائها أو تحسينها.
           </p>
 
         </div>
@@ -327,17 +325,17 @@ const Home = () => {
 
             <img
               src="https://placehold.co/600x400"
-              alt="Project"
+              alt="مشروع"
             />
 
             <div className="portfolio-content">
 
-              <h3>Restaurant Website</h3>
+              <h3>موقع مطعم</h3>
 
-              <span>Web Design</span>
+              <span>تصميم ويب</span>
 
               <p>
-                Modern responsive website with online reservations and menu.
+                موقع حديث ومتجاوب مع حجوزات عبر الإنترنت وقائمة طعام.
               </p>
 
             </div>
@@ -348,17 +346,17 @@ const Home = () => {
 
             <img
               src="https://placehold.co/600x400"
-              alt="Project"
+              alt="مشروع"
             />
 
             <div className="portfolio-content">
 
-              <h3>Fashion Store</h3>
+              <h3>متجر أزياء</h3>
 
-              <span>E-commerce</span>
+              <span>متجر إلكتروني</span>
 
               <p>
-                Online clothing store with secure checkout and inventory system.
+                متجر ملابس عبر الإنترنت مع دفع آمن ونظام لإدارة المخزون.
               </p>
 
             </div>
@@ -369,17 +367,17 @@ const Home = () => {
 
             <img
               src="https://placehold.co/600x400"
-              alt="Project"
+              alt="مشروع"
             />
 
             <div className="portfolio-content">
 
-              <h3>Developer Portfolio</h3>
+              <h3>بورتفوليو مطوّر</h3>
 
-              <span>Personal Website</span>
+              <span>موقع شخصي</span>
 
               <p>
-                Interactive portfolio showcasing projects and experience.
+                بورتفوليو تفاعلي يبرز المشاريع والخبرة.
               </p>
 
             </div>
@@ -389,7 +387,7 @@ const Home = () => {
         </div>
 
         <button className="portfolio-btn">
-          View Full Portfolio
+          عرض البورتفوليو بالكامل
         </button>
 
       </section>
@@ -400,10 +398,10 @@ const Home = () => {
 
         <div className="section-title">
 
-          <h2>What Our Clients Say</h2>
+          <h2>ماذا يقول عملاؤنا؟</h2>
 
           <p>
-            We're proud to help businesses build a stronger online presence.
+            نفخر بمساعدتك الشركات على بناء حضور أقوى على الإنترنت.
           </p>
 
         </div>
@@ -414,20 +412,19 @@ const Home = () => {
 
             <img
               src="https://placehold.co/100"
-              alt="Client"
+              alt="عميل"
             />
 
-            <h3>Ahmed Hassan</h3>
+            <h3>أحمد حسن</h3>
 
-            <span>Small Business Owner</span>
+            <span>صاحب مشروع صغير</span>
 
             <div className="stars">
               ★★★★★
             </div>
 
             <p>
-              The team delivered my website ahead of schedule. Everything was
-              smooth and communication was excellent.
+              سلّم الفريق موقعي قبل الموعد المحدد. كان كل شيء سلسًا، وكان التواصل ممتازًا.
             </p>
 
           </div>
@@ -436,20 +433,19 @@ const Home = () => {
 
             <img
               src="https://placehold.co/100"
-              alt="Client"
+              alt="عميل"
             />
 
-            <h3>Sarah Mohamed</h3>
+            <h3>سارة محمد</h3>
 
-            <span>Startup Founder</span>
+            <span>مؤسسة شركة ناشئة</span>
 
             <div className="stars">
               ★★★★★
             </div>
 
             <p>
-              They completely redesigned our old website and increased its
-              speed dramatically. Highly recommended.
+              أعادوا تصميم موقعنا القديم وزادت سرعته بشكل كبير. أنصح به بشدة.
             </p>
 
           </div>
@@ -458,20 +454,19 @@ const Home = () => {
 
             <img
               src="https://placehold.co/100"
-              alt="Client"
+              alt="عميل"
             />
 
-            <h3>Omar Ali</h3>
+            <h3>عمر علي</h3>
 
-            <span>Freelancer</span>
+            <span>مستقل</span>
 
             <div className="stars">
               ★★★★★
             </div>
 
             <p>
-              Professional developers, beautiful design and excellent support
-              after the project was finished.
+              مطورون محترفون، تصميم جميل ودعم ممتاز بعد إنهاء المشروع.
             </p>
 
           </div>
@@ -479,16 +474,17 @@ const Home = () => {
         </div>
 
       </section>
-            {/* ================= FAQ ================= */}
+
+      {/* ================= FAQ ================= */}
 
       <section className="faq">
 
         <div className="section-title">
 
-          <h2>Frequently Asked Questions</h2>
+          <h2>الأسئلة الشائعة</h2>
 
           <p>
-            Have questions? We've answered the ones we hear most often.
+            لديك أسئلة؟ لقد أجبنا عن أكثر ما نسأل عنه.
           </p>
 
         </div>
@@ -496,34 +492,34 @@ const Home = () => {
         <div className="faq-container">
 
           <div className="faq-item">
-            <h3>How long does it take to build a website?</h3>
+            <h3>كم يستغرق بناء موقع إلكتروني؟</h3>
             <p>
-              Most websites are completed within 3–14 days depending on the
-              project's complexity and the requested features.
+              عادةً يتم إنجاز أغلب المواقع خلال 3–14 يومًا حسب تعقيد المشروع
+              والميزات المطلوبة.
             </p>
           </div>
 
           <div className="faq-item">
-            <h3>Can you fix my existing website?</h3>
+            <h3>هل يمكنكم إصلاح موقعي الحالي؟</h3>
             <p>
-              Absolutely! We can repair bugs, redesign pages, improve speed,
-              optimize SEO, and add new features to your current website.
+              بالتأكيد! يمكننا إصلاح الأخطاء، وإعادة تصميم الصفحات، وتحسين السرعة،
+              وتحسين SEO وإضافة ميزات جديدة إلى موقعك الحالي.
             </p>
           </div>
 
           <div className="faq-item">
-            <h3>Do I pay everything before work starts?</h3>
+            <h3>هل أدفع كل شيء قبل بدء العمل؟</h3>
             <p>
-              No. We usually require only a deposit to begin. The remaining
-              balance is paid after you review and approve the project.
+              لا. نطلب عادةً دفعة مقدمة فقط لبدء العمل. يتم دفع باقي المبلغ بعد
+              أن تراجع المشروع وتوافق عليه.
             </p>
           </div>
 
           <div className="faq-item">
-            <h3>Do you provide maintenance after delivery?</h3>
+            <h3>هل تقدمون صيانة بعد التسليم؟</h3>
             <p>
-              Yes! We offer ongoing maintenance plans including updates,
-              backups, security monitoring, and technical support.
+              نعم! نوفر خطط صيانة مستمرة تشمل التحديثات والنسخ الاحتياطي
+              والمراقبة الأمنية والدعم الفني.
             </p>
           </div>
 
@@ -537,21 +533,21 @@ const Home = () => {
 
         <div className="cta-content">
 
-          <h2>Ready to Build Your Next Website?</h2>
+          <h2>جاهز لبناء موقعك التالي؟</h2>
 
           <p>
-            Whether you're starting from scratch or improving an existing
-            website, we're here to help turn your ideas into reality.
+            سواء كنت تبدأ من الصفر أو تعمل على تحسين موقع موجود، نحن هنا لنساعدك
+            في تحويل أفكارك إلى واقع.
           </p>
 
           <div className="cta-buttons">
 
             <button className="primary-btn">
-              Start Your Project
+              ابدأ مشروعك
             </button>
 
             <button className="secondary-btn">
-              Contact Us
+              تواصل معنا
             </button>
 
           </div>
@@ -573,9 +569,8 @@ const Home = () => {
             <h3>SAMEMLY</h3>
 
             <p>
-              Professional web development services helping startups,
-              businesses and creators launch beautiful, fast and reliable
-              websites.
+              خدمات احترافية لتطوير الويب تساعد الشركات الناشئة ورواد الأعمال
+              والمبدعين على إطلاق مواقع جميلة وسريعة وموثوقة.
             </p>
 
           </div>
@@ -584,13 +579,13 @@ const Home = () => {
 
           <div className="footer-column">
 
-            <h4>Quick Links</h4>
+            <h4>روابط سريعة</h4>
 
-            <a href="/">Home</a>
-            <a href="/services">Services</a>
-            <a href="/portfolio">Portfolio</a>
-            <a href="/about">About Us</a>
-            <a href="/contact">Contact</a>
+            <a href="/">الرئيسية</a>
+            <a href="/services">الخدمات</a>
+            <a href="/portfolio">البورتفوليو</a>
+            <a href="/about">من نحن</a>
+            <a href="/contact">اتصل بنا</a>
 
           </div>
 
@@ -598,12 +593,12 @@ const Home = () => {
 
           <div className="footer-column">
 
-            <h4>Services</h4>
+            <h4>الخدمات</h4>
 
-            <a href="/">Website Design</a>
-            <a href="/">Website Development</a>
-            <a href="/">Bug Fixes</a>
-            <a href="/">Maintenance</a>
+            <a href="/">تصميم المواقع</a>
+            <a href="/">تطوير المواقع</a>
+            <a href="/">حل مشاكل الموقع</a>
+            <a href="/">الصيانة</a>
 
           </div>
 
@@ -611,7 +606,7 @@ const Home = () => {
 
           <div className="footer-column">
 
-            <h4>Contact</h4>
+            <h4>التواصل</h4>
 
             <p>hello@samemly.com</p>
 
@@ -619,13 +614,10 @@ const Home = () => {
 
             <div className="social-links">
 
-              <a href="/">Facebook</a>
-
-              <a href="/">Instagram</a>
-
-              <a href="/">LinkedIn</a>
-
-              <a href="/">X</a>
+              <a href="/">فيسبوك</a>
+              <a href="/">إنستجرام</a>
+              <a href="/">لينكدإن</a>
+              <a href="/">إكس</a>
 
             </div>
 
@@ -636,7 +628,7 @@ const Home = () => {
         <div className="footer-bottom">
 
           <p>
-            © 2026 SAMEMLY. All rights reserved.
+            © 2026 SAMEMLY. جميع الحقوق محفوظة.
           </p>
 
         </div>
