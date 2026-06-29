@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './Components/Layout/layout';
 import Home from './Pages/Home/Home';
 import Services from './Pages/Services/Services';
+import ServiceDetails from './Pages/Services/ServiceDetails/ServiceDetails';
 
 // Quick template placeholders for other routes
 const ServicesPage = () => (
@@ -32,11 +33,19 @@ function App() {
         <Routes>
           {/* Base Landing Page Route */}
           <Route path="/" element={<Home />} />
-          
+
           {/* Secondary Pages Routes */}
           <Route path="/services" element={<Services />} />
+          {/* <Route path="/services/:id" element={<Services />} /> */}
+          <Route
+
+            path="/services/:serviceId"
+
+            element={<ServiceDetails />}
+
+          />
           <Route path="/portfolio" element={<PortfolioPage />} />
-          
+
           {/* Fallback route for typing errors */}
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

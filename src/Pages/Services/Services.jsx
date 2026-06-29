@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Services.css";
 
 import {
@@ -16,6 +17,7 @@ import textLogo from "../../assets/text-logo.png";
 
 const services = [
   {
+    id: "custom-website-development",
     icon: <FaCode />,
     title: "تصميم مواقع إلكترونية مخصصة",
     description:
@@ -29,6 +31,7 @@ const services = [
   },
 
   {
+    id: "website-redesign",
     icon: <FaPaintBrush />,
     title: "إعادة تصميم المواقع",
     description:
@@ -42,6 +45,7 @@ const services = [
   },
 
   {
+    id: "website-maintenance",
     icon: <FaTools />,
     title: "صيانة المواقع",
     description:
@@ -55,6 +59,7 @@ const services = [
   },
 
   {
+    id: "bug-fixes",
     icon: <FaBug />,
     title: "إصلاح الأخطاء",
     description:
@@ -68,6 +73,7 @@ const services = [
   },
 
   {
+    id: "landing-page-development",
     icon: <FaRocket />,
     title: "تصميم صفحات هبوط",
     description:
@@ -81,6 +87,7 @@ const services = [
   },
 
   {
+    id: "performance-optimization",
     icon: <FaBolt />,
     title: "تحسين الأداء",
     description:
@@ -203,9 +210,9 @@ const Services = () => {
 
                 <h4>{service.price}</h4>
 
-                <button>
-                  اعرف المزيد ←
-                </button>
+                <Link to={`/services/${service.id}`}>
+                  اعرف المزيد →
+                </Link>
 
               </div>
 
