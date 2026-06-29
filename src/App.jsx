@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './Components/Layout/layout';
-import Home from './Pages/Home/home';
+import Home from './Pages/Home/Home';
 
 // Quick template placeholders for other routes
 const ServicesPage = () => (
