@@ -2,6 +2,7 @@ import "./Home.css";
 
 import heroLogo from "../../assets/logo-big.png";
 import heroImage from "../../assets/hero-illustration.png";
+import textLogo from "../../assets/text-logo.png";
 
 import service1 from "../../assets/web-design.png";
 import service2 from "../../assets/development.png";
@@ -566,7 +567,11 @@ const Home = () => {
 
           <div className="footer-column">
 
-            <h3>SAMEMLY</h3>
+            <img
+              src={textLogo}
+              alt="شعار SAMEMLY"
+              className="footer-logo"
+            />
 
             <p>
               خدمات احترافية لتطوير الويب تساعد الشركات الناشئة ورواد الأعمال

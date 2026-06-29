@@ -253,6 +253,16 @@ h1,h2,h3,h4,p,span,button{
   backdrop-filter: blur(14px);
 }
 
+.faq-container{
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+.faq-item{
+  margin-bottom:0;
+}
+
 /* ==========================================
    SERVICES
 ========================================== */
@@ -508,6 +518,13 @@ h1,h2,h3,h4,p,span,button{
   font-size:32px;
   color:#39e5ff;
   margin-bottom:20px;
+}
+
+.footer-logo{
+  width: 160px;
+  height: auto;
+  margin-bottom: 18px;
+  display: block;
 }
 
 .footer-column h4{
