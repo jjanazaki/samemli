@@ -1,5 +1,4 @@
-import React from "react";
-import "./Home.css";
+import "./home.css";
 
 import heroLogo from "../../assets/logo-big.png";
 import heroImage from "../../assets/hero-illustration.png";
