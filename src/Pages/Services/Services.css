@@ -1208,3 +1208,95 @@
 .why-us {
     background: #0d0720;
 }
+
+@media (max-width: 1024px) {
+    .services-hero {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+        padding-top: 110px;
+    }
+
+    .hero-left {
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .services-grid,
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-page section {
+        padding: 90px 6%;
+    }
+
+    .hero-left h1 {
+        font-size: 42px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+    }
+
+    .services-grid,
+    .why-grid,
+    .table-header,
+    .table-row {
+        grid-template-columns: 1fr;
+    }
+
+    .table-header,
+    .table-row {
+        padding: 18px 16px;
+    }
+
+    .service-card,
+    .why-card,
+    .faq-item,
+    .timeline-item {
+        padding: 24px 18px;
+    }
+
+    .timeline::before {
+        left: 16px;
+    }
+
+    .timeline-item {
+        padding-left: 72px;
+        margin-bottom: 44px;
+    }
+
+    .timeline-number {
+        width: 48px;
+        height: 48px;
+        font-size: 18px;
+    }
+
+    .faq-item h3 {
+        font-size: 18px;
+    }
+
+    .hero-image {
+        max-width: 100%;
+    }
+
+    .service-footer a {
+        display: block;
+        text-align: center;
+    }
+}
